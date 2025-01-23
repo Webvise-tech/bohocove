@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/95294c96e9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>BOHOCOVE</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+                publicKey: "IWxTW5DhPlhKeEskS",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="nav__bar">
+                <div class="logo nav__logo">
+                    <a href="#"><img src="./assets/logo-1-removebg-preview.png" alt="logo" /></a>
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#event">Event</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#room"><button class="btn nav__btn">Find Your Room</button></a>
+        </nav>
+        <div class="section__container header__container" id="home">
+            <p>Simple - Unique - Friendly</p>
+            <h1>Make Yourself At Home<br />In Our <span>Hotel</span>.</h1>
+        </div>
+    </header>
+
+    <section class="section__container booking__container">
+        <form action="/" class="booking__form">
+            <div class="input__group">
+                <span><i class="fa-solid fa-water-ladder"></i></span>
+                <div>
+                    <label for="check-in">POOL</label>
+
+                </div>
+            </div>
+            <div class="input__group">
+                <span><i class="fa-solid fa-umbrella-beach"></i></span>
+                <div>
+                    <label for="check-out">BEACH</label>
+
+                </div>
+            </div>
+            <div class="input__group">
+                <span><i class="fa-solid fa-utensils"></i></span>
+                <div>
+                    <label for="guest">RESTAURANT</label>
+
+                </div>
+            </div>
+            <div class="input__group input__btn">
+                <button class="btn" onclick="scrollToEvent(event)">EVENTS</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="about top" id="about">
+        <div class="about__container flex">
+            <div class="left">
+                <div class="img">
+                    <img src="./assets/aboutUs.jpg" alt="" class="image1">
+                    <img src="./assets/aboutUs2.jpg" alt="" class="image2">
+                </div>
+            </div>
+            <div class="right">
+                <div class="heading">
+                    <h5>RAISING COMFOMRT TO THE HIGHEST LEVEL</h5>
+                    <h2>Welcome to Bohocove Resort</h2>
+                    <p>Founded in 1985 and fully renovated in 2024, Bohocove blends timeless charm with modern comfort. With over 20 rooms, a private beach, an outdoor pool, and a restaurant, we offer the perfect coastal getaway for relaxation and enjoyment.
+                    </p>
+                    <p>Bohocove takes its name from a fusion of "Boho," reflecting the bohemian style known for its freshness, creativity, and free-spirited vibe, and "Cove," symbolizing a tranquil and intimate retreat. Bohocove captures the essence of peaceful
+                        seclusion and natural beauty. It offers a perfect blend of modern comfort and bohemian charm, inviting guests to unwind and embrace a lifestyle inspired by relaxation and artistic expression.</p>
+                    <a href="#service2"><button class="btn">WHAT WE OFFER</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service" id="service">
+        <div class="section__container service__container">
+
+            <div class="service__content">
+                <p class="section__subheader">SERVICES</p>
+                <h2 class="section__header">Strive Only For The Best.</h2>
+                <ul class="service__list">
+                    <li>
+                        <span><i class="ri-shield-star-line"></i></span> High Class Security
+                    </li>
+                    <li>
+                        <span><i class="ri-24-hours-line"></i></span> 24 Hours Room Service
+                    </li>
+                    <li>
+                        <span><i class="ri-headphone-line"></i></span> Conference Room
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="service2">
+        <div class="row">
+            <h2 class="section-heading">What We Offer</h2>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-hotel"></i>
+                    </div>
+                    <h3 class="card__title">Room</h3>
+                    <p class="card__para">
+                        Enjoy our cozy rooms with complimentary Wi-Fi and breathtaking views, ensuring a relaxing and connected stay.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-umbrella-beach"></i>
+                    </div>
+                    <h3 class="card__title">Beach</h3>
+                    <p class="card__para">
+                        Enjoy our private beach located on the scenic Chekka coast, featuring soft sandy shores and breathtaking coastal views for a truly relaxing escape.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h3 class="card__title">Restaurant</h3>
+                    <p class="card__para">
+                        Our restaurant offers exquisite seafood in a priceless location, featuring high-quality dishes and comfortable, elegant furniture for a delightful dining experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__container room__container" id="room">
+        <div class="room__grid">
+            <div class="room__card">
+                <div class="room__card__image">
+                    <img class="roomImage fade-in" src="assets/room-1.jpg" alt="Room Image" />
+                </div>
+                <div class="room__card__bullets">
+                    <span class="bullet active" data-index="0"></span>
+                    <span class="bullet" data-index="1"></span>
+                    <span class="bullet" data-index="2"></span>
+                </div>
+                <div class="room__card__details">
+                    <h4>Double</h4>
+                    <p>This room contains a comfortable queen bed and a sofa bed, making it perfect for up to 3 people. Breakfast is available for an additional $10 per person.</p>
+                    <h5>Starting from <span>$150/night</span></h5>
+                    <div class="btn-container">
+                        <a href="https://wa.me/96181160601" target="_blank"><button class="btn">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="room__card" data-images='["assets/room-1.jpg", "assets/room-2.jpg", "assets/room-3.jpg"]'>
+                <div class="room__card__image">
+                    <img class="roomImage fade-in" src="assets/room-1.jpg" alt="Room Image" />
+                </div>
+                <div class="room__card__bullets">
+                    <span class="bullet active" data-index="0"></span>
+                    <span class="bullet" data-index="1"></span>
+                    <span class="bullet" data-index="2"></span>
+                </div>
+                <div class="room__card__details">
+                    <h4>Double Deluxe</h4>
+                    <p>This room features a queen bed and a double sofa bed, comfortably accommodating up to 4 people. Breakfast is available for an additional $10 per person.</p>
+                    <h5>Starting from <span>$150/night</span></h5>
+                    <div class="btn-container">
+                        <a href="https://wa.me/96181160601" target="_blank"><button class="btn">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="room__card" data-images='["assets/room-1.jpg", "assets/room-2.jpg", "assets/room-3.jpg"]'>
+                <div class="room__card__image">
+                    <img class="roomImage fade-in" src="assets/room-1.jpg" alt="Room Image" />
+                </div>
+                <div class="room__card__bullets">
+                    <span class="bullet active" data-index="0"></span>
+                    <span class="bullet" data-index="1"></span>
+                    <span class="bullet" data-index="2"></span>
+                </div>
+                <div class="room__card__details">
+                    <h4>Family</h4>
+                    <p>This room includes a queen bed, a double sofa bed, and a single sofa bed, comfortably fitting up to 5 people. Breakfast is available for an additional $10 per person.</p>
+                    <h5>Starting from <span>$180/night</span></h5>
+                    <div class="btn-container">
+                        <a href="https://wa.me/96181160601" target="_blank"><button class="btn">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="room__card" data-images='["assets/room-1.jpg", "assets/room-2.jpg", "assets/room-3.jpg"]'>
+                <div class="room__card__image">
+                    <img class="roomImage fade-in" src="assets/room-1.jpg" alt="Room Image" />
+                </div>
+                <div class="room__card__bullets">
+                    <span class="bullet active" data-index="0"></span>
+                    <span class="bullet" data-index="1"></span>
+                    <span class="bullet" data-index="2"></span>
+                </div>
+                <div class="room__card__details">
+                    <h4>Suit</h4>
+                    <p>This room features a queen bed, a double sofa bed, and a single sofa bed, comfortably accommodating up to 5 people. The room includes a fully-equipped kitchen and is separate from the living area for added comfort. Breakfast is available
+                        for an additional $10 per person.</p>
+                    <h5>Starting from <span>$210/night</span></h5>
+                    <div class="btn-container">
+                        <a href="https://wa.me/96181160601" target="_blank"><button class="btn">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="event-section" id="event">
+        <div class="event-content">
+            <div class="event-description">
+                <h2 class="event__title">Unforgettable Events at Bohocove</h2>
+                <p class="event__para">
+                    At Bohocove, we curate a series of exceptional in-house events designed to elevate the dining experience. From refined themed dinners to exclusive live entertainment, each event is thoughtfully crafted to offer our guests an unforgettable atmosphere and
+                    a taste of luxury.
+                </p>
+                <ul>
+                    <li>Banquet Hall for up to 300 guests</li>
+                    <li>Beachside Ceremonies</li>
+                    <li>Themed Dining Experiences</li>
+                    <li>Live Music and Cultural Nights</li>
+                </ul>
+            </div>
+            <div class="event-video">
+                <video controls autoplay muted loop>
+                    <source src="./assets/mp4-video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section__container banner__container">
+        <div class="banner__content">
+            <div class="banner__card">
+                <h4>25+</h4>
+                <p>Properties Available</p>
+            </div>
+            <div class="banner__card">
+                <h4>350+</h4>
+                <p>Bookings Completed</p>
+            </div>
+            <div class="banner__card">
+                <h4>600+</h4>
+                <p>Happy Customers</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="container">
+            <span class="big-circle"></span>
+            <img src="img/shape.png" class="square" alt="" />
+            <div class="form">
+                <div class="contact-info">
+                    <h3 class="title">Let's get in touch</h3>
+                    <p class="text">
+                        Have questions or need assistance? We're here to help! Whether you're looking for more information, have specific inquiries, or just want to get in touch, don't hesitate to reach out. Our team is dedicated to providing you with the support you need. Fill
+                        out the form below or contact us directly, and we'll get back to you as soon as possible.
+                    </p>
+
+                    <div class="info">
+                        <div class="information">
+                            <img src="img/location.png" class="icon" alt="" />
+                            <p>Chekka North-Lebanon</p>
+                        </div>
+                        <div class="information">
+                            <img src="img/email.png" class="icon" alt="" />
+                            <p>bohocove-lb@gmail.com</p>
+                        </div>
+                        <div class="information">
+                            <img src="img/phone.png" class="icon" alt="" />
+                            <p>+961 (0)6 545 524</p>
+                        </div>
+                        <div class="information">
+                            <img src="img/phone.png" class="icon" alt="" />
+                            <p>+961 81 160 601</p>
+                        </div>
+                    </div>
+
+                    <div class="social-media">
+                        <p>Connect with us :</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/share/19hVY2Q2yB/?mibextid=wwXIfr" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/bohocove.lb" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
+
+                    <form action="index.html" autocomplete="off" onsubmit="contact(event)">
+                        <h3 class="title">Contact us</h3>
+                        <div class="input-container">
+                            <input type="text" name="from_name" class="input" required/>
+                            <label for="">Username</label>
+                            <span>Username</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="user_email" class="input" required/>
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="tel" name="from_phone" class="input" required/>
+                            <label for="">Phone</label>
+                            <span>Phone</span>
+                        </div>
+                        <div class="input-container textarea">
+                            <textarea name="message" class="input" required></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <input type="submit" value="Send" class="btn__contact" />
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="logo">
+                    <a href="#home"><img src="./assets/logo-1-removebg-preview.png" alt="logo" /></a>
+                </div>
+                <p class="section__description">
+                    Thank you for visiting our site. Stay connected with us for updates, news, and offers. We are here to provide the best service and experience.
+                </p>
+                <a href="#contact"><button class="btn">Contact Us</button></a>
+            </div>
+            <div class="footer__col">
+                <h4>QUICK LINKS</h4>
+                <ul class="footer__links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#event">Event</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>FIND US</h4>
+                <p class="contact__footer--info">Chekka North-Lebanon</p>
+                <p class="contact__footer--info">+961 (0)6 545 524</p>
+                <p class="contact__footer--info">+961 81 160 601</p>
+                <p class="contact__footer--info">bohocove-lb@gmail.com</p>
+                <div class="social-media">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/19hVY2Q2yB/?mibextid=wwXIfr" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/bohocove.lb" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__col">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3294.9137333397853!2d35.72077187572824!3d34.327216273054674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDE5JzM4LjAiTiAzNcKwNDMnMjQuMSJF!5e0!3m2!1sen!2slb!4v1737546445440!5m2!1sen!2slb"
+                    width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="footer__bar">
+            Copyright © 2025 Webvise. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
