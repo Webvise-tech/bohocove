@@ -160,67 +160,61 @@ function contact(event) {
 
 
 
-document.querySelectorAll(".room__card").forEach((card) => {
-    const images = [
-        ["assets/double-room-1.jpg", "assets/double-room-2-0.jpg", "assets/double-room-3.jpg"], // For card 1
-        ["assets/double-del-room-1.jpg", "assets/double-del-room-2.jpg", "assets/double-del-room-3.jpg"], // For card 2
-        ["assets/family-room-10.jpg", "assets/family-room-2.jpg", "assets/family-room-3.jpg"], // For card 3
-        ["assets/suit-room-1.jpg", "assets/suit-room-2.jpg", "assets/family-room-10.jpg"], // For card 4
-    ];
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".room__card").forEach((card) => {
+        const images = [
+            ["/assets/double-room-1.jpg", "/assets/double-room-2-0.jpg", "/assets/double-room-3.jpg"],
+            ["/assets/double-del-room-1.jpg", "/assets/double-del-room-2.jpg", "/assets/double-del-room-3.jpg"],
+            ["/assets/family-room-10.jpg", "/assets/family-room-2.jpg", "/assets/family-room-3.jpg"],
+            ["/assets/suit-room-1.jpg", "/assets/suit-room-2.jpg", "/assets/family-room-10.jpg"],
+        ];
 
-    let currentIndex = 0;
-    let intervalId = null; // Variable to store the interval ID
-    const roomImage = card.querySelector(".roomImage");
-    const bullets = card.querySelectorAll(".bullet");
+        let currentIndex = 0;
+        let intervalId = null; // Variable to store the interval ID
+        const roomImage = card.querySelector(".roomImage");
+        const bullets = card.querySelectorAll(".bullet");
 
-    // Function to update the image and bullets
-    function updateImage(index) {
-        roomImage.src = images[Array.from(card.parentElement.children).indexOf(card)][index];
+        function updateImage(index) {
+            roomImage.src = images[Array.from(card.parentElement.children).indexOf(card)][index];
+            roomImage.classList.remove("fade-in");
+            void roomImage.offsetWidth;
+            roomImage.classList.add("fade-in");
 
-        // Restart the fade-in animation
-        roomImage.classList.remove("fade-in");
-        void roomImage.offsetWidth; // Trigger reflow to restart animation
-        roomImage.classList.add("fade-in");
+            bullets.forEach((bullet, i) => {
+                bullet.classList.toggle("active", i === index);
+            });
+        }
 
-        // Update bullets
-        bullets.forEach((bullet, i) => {
-            bullet.classList.toggle("active", i === index);
-        });
-    }
+        function startImageRotation() {
+            if (!intervalId) {
+                intervalId = setInterval(() => {
+                    currentIndex = (currentIndex + 1) % images[Array.from(card.parentElement.children).indexOf(card)].length;
+                    updateImage(currentIndex);
+                }, 2000);
+            }
+        }
 
-    // Function to start the interval
-    function startImageRotation() {
-        if (!intervalId) { // Prevent multiple intervals
-            intervalId = setInterval(() => {
-                currentIndex = (currentIndex + 1) % images[Array.from(card.parentElement.children).indexOf(card)].length; // Increment index and loop back
+        function stopImageRotation() {
+            if (intervalId) {
+                clearInterval(intervalId);
+                intervalId = null;
+            }
+        }
+
+        card.addEventListener("mouseenter", startImageRotation);
+        card.addEventListener("mouseleave", stopImageRotation);
+
+        bullets.forEach((bullet) => {
+            bullet.addEventListener("click", (e) => {
+                currentIndex = parseInt(e.target.dataset.index, 10);
                 updateImage(currentIndex);
-            }, 2000); // Change the interval timing as needed
-        }
-    }
-
-    // Function to stop the interval
-    function stopImageRotation() {
-        if (intervalId) {
-            clearInterval(intervalId);
-            intervalId = null;
-        }
-    }
-
-    // Add hover event listeners
-    card.addEventListener("mouseenter", startImageRotation);
-    card.addEventListener("mouseleave", stopImageRotation);
-
-    // Allow bullet clicks to work independently
-    bullets.forEach((bullet) => {
-        bullet.addEventListener("click", (e) => {
-            currentIndex = parseInt(e.target.dataset.index, 10); // Get the index from data attribute
-            updateImage(currentIndex); // Update image immediately when clicking bullet
+            });
         });
-    });
 
-    // Initialize the first image
-    updateImage(currentIndex);
+        updateImage(currentIndex);
+    });
 });
+
 
 function scrollToEvent(event) {
     event.preventDefault(); // Prevent page refresh
