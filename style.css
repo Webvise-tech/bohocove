@@ -1038,6 +1038,27 @@
         margin: 10px 0;
         color: var(--text-light)
     }
+    
+    .map-container {
+        position: relative;
+        width: 100%;
+        /* Full width of the parent container */
+        padding-top: 56.25%;
+        /* 16:9 aspect ratio (height/width = 9/16 = 56.25%) */
+        overflow: hidden;
+    }
+    
+    .map-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* Full width of the container */
+        height: 100%;
+        /* Full height of the container */
+        border: 0;
+        /* Remove default border */
+    }
     /*footer*/
     /* ========== General Media Queries ========== */
     
