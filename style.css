@@ -1326,6 +1326,9 @@
             width: 230px;
             height: 150px;
         }
+        .fix__bug {
+            margin-top: 350px;
+        }
         .heading h5 {
             font-size: 12px;
         }
@@ -1365,19 +1368,3 @@
         }
     }
     /* Additional adjustments for screens smaller than 375px */
-    
-    @media (max-width: 377px) {
-        .container {
-            padding: 10px;
-        }
-        .card {
-            padding: 10px;
-            margin: 10px auto;
-        }
-        .fix__bug {
-            margin-top: 350px;
-        }
-        .text-content {
-            font-size: 12px;
-        }
-    }
