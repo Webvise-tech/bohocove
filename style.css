@@ -94,7 +94,7 @@
     }
     
     .header {
-        background-image: url("assets/mainSection.png");
+        background-image: url("tiny-assets/mainSection.png");
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -305,7 +305,7 @@
     /*service-1*/
     
     .service {
-        background-image: url("assets/resto.jpg");
+        background-image: url("tiny-assets/resto.jpg");
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;

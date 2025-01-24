@@ -163,10 +163,10 @@ function contact(event) {
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".room__card").forEach((card) => {
         const images = [
-            ["/assets/double-room-1.jpg", "/assets/double-room-2-0.jpg", "/assets/double-room-3.jpg"],
-            ["/assets/double-del-room-1.jpg", "/assets/double-del-room-2.jpg", "/assets/double-del-room-3.jpg"],
-            ["/assets/family-room-10.jpg", "/assets/family-room-2.jpg", "/assets/family-room-3.jpg"],
-            ["/assets/suit-room-1.jpg", "/assets/suit-room-2.jpg", "/assets/family-room-10.jpg"],
+            ["/tiny-assets/double-room-1.jpg", "/tiny-assets/double-room-2-0.jpg", "/tiny-assets/double-room-3.jpg"],
+            ["/tiny-assets/double-del-room-1.jpg", "/tiny-assets/double-del-room-2.jpg", "/tiny-assets/double-del-room-3.jpg"],
+            ["/tiny-assets/family-room-10.jpg", "/tiny-assets/family-room-2.jpg", "/tiny-assets/family-room-3.jpg"],
+            ["/tiny-assets/suit-room-1.jpg", "/tiny-assets/suit-room-2.jpg", "/tiny-assets/family-room-10.jpg"],
         ];
 
         let currentIndex = 0;
