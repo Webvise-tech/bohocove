@@ -99,6 +99,15 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+    
+    section {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 10px;
+        /* Add space inside each section */
+        box-sizing: border-box;
+    }
     /*nav*/
     
     nav {
@@ -889,7 +898,7 @@
     
     .information {
         display: flex;
-        color: #555;
+        color: var(--text-light);
         margin: 0.7rem 0;
         align-items: center;
         font-size: 0.95rem;
@@ -1129,6 +1138,7 @@
     @media (max-width: 768px) {
         .room__card {
             flex: 0 1 100%;
+            width: 100%;
             /* Full width for smaller screens */
         }
         .form {
