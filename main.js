@@ -241,7 +241,7 @@ function closePopup(id) {
     if (popup) popup.style.display = "none";
 }
 
-function initializeSlider(popupId) {
+function initializeSlider(popupId, images) {
     const popup = document.getElementById(popupId);
     if (!popup) return;
 
@@ -256,14 +256,6 @@ function initializeSlider(popupId) {
     }
 
     let currentImageIndex = 0;
-    const images = [
-        "tiny-assets/IMG_0890_Original.webp",
-        "tiny-assets/IMG_0890_Original.webp",
-        "tiny-assets/IMG_0892_Original.jpeg",
-        "tiny-assets/IMG_0895_Original.jpeg",
-        "tiny-assets/IMG_0897_Original.jpeg",
-        "tiny-assets/room-6.jpg"
-    ];
 
     function updateActiveElements() {
         mainImage.src = images[currentImageIndex];
@@ -297,6 +289,52 @@ function initializeSlider(popupId) {
 
     updateActiveElements();
 }
+
+// Initialize sliders for each popup with their respective images
+document.addEventListener("DOMContentLoaded", () => {
+    initializeSlider("double-room", [
+        "tiny-assets/IMG_0890_Original.webp",
+        "tiny-assets/IMG_0892_Original.jpeg",
+        "tiny-assets/IMG_0895_Original.jpeg",
+        "tiny-assets/IMG_0897_Original.jpeg",
+        "tiny-assets/IMG_7961_Original.jpeg",
+        "tiny-assets/IMG_0923_Original.jpeg"
+    ]);
+
+    initializeSlider("double-room-2", [
+        "tiny-assets/room-1.jpg",
+        "tiny-assets/room-2.jpg",
+        "tiny-assets/room-3.jpg",
+        "tiny-assets/room-4.jpg",
+        "tiny-assets/IMG_0897_Original.jpeg",
+        "tiny-assets/room-6.jpg"
+    ]);
+    initializeSlider("family-room", [
+        "tiny-assets/room-1.jpg",
+        "tiny-assets/room-2.jpg",
+        "tiny-assets/room-3.jpg",
+        "tiny-assets/room-4.jpg",
+        "tiny-assets/IMG_0897_Original.jpeg",
+        "tiny-assets/room-6.jpg"
+    ]);
+    initializeSlider("suit-room", [
+        "tiny-assets/room-1.jpg",
+        "tiny-assets/room-2.jpg",
+        "tiny-assets/room-3.jpg",
+        "tiny-assets/room-4.jpg",
+        "tiny-assets/IMG_0897_Original.jpeg",
+        "tiny-assets/room-6.jpg"
+    ]);
+    initializeSlider("suit-room-2", [
+        "tiny-assets/room-1.jpg",
+        "tiny-assets/room-2.jpg",
+        "tiny-assets/room-3.jpg",
+        "tiny-assets/room-4.jpg",
+        "tiny-assets/IMG_0897_Original.jpeg",
+        "tiny-assets/room-6.jpg"
+    ]);
+});
+
 //gallery slider
 var slideIndex = 1;
 showSlides(slideIndex);

@@ -161,12 +161,12 @@
         <div class="room__grid">
             <div class="room__card fix__bug">
                 <div class="room__card__image">
-                    <img class="roomImage fade-in" src="tiny-assets/room-1.jpg" alt="Room Image" />
+                    <img class="roomImage" src="./tiny-assets/IMG_0891_Original.jpeg" alt="Room Image" />
                 </div>
                 <div class="room__card__details">
                     <h4>CLASSIC SINGLE ROOM</h4>
                     <p>Relax in a cozy room with a queen bed and a single sofa bed, perfect for a comfortable stay by the sea.</p>
-                    <h5>Starting from <span>$110/night</span></h5>
+                    <h5>Starting from <span>$60/night</span></h5>
                     <div class="btn-container">
                         <a href="https://wa.me/96181160601" target="_blank"><button class="btn">Book Now</button></a>
                         <button class="btn info-btn" onclick="openPopup('double-room')">Details</button>
@@ -222,11 +222,11 @@
                             <!-- Thumbnail Images -->
                             <div class="thumbnails-container">
                                 <img class="thumbnail active" src="./tiny-assets/IMG_0890_Original.webp" onclick="goToImage(0)">
-                                <img class="thumbnail" src="./tiny-assets/IMG_0890_Original.webp" onclick="goToImage(1)">
-                                <img class="thumbnail" src="./tiny-assets/IMG_0892_Original.jpeg" onclick="goToImage(2)">
-                                <img class="thumbnail" src="./tiny-assets/IMG_0895_Original.jpeg" onclick="goToImage(3)">
-                                <img class="thumbnail" src="./tiny-assets/IMG_0897_Original.jpeg" onclick="goToImage(4)">
-                                <img class="thumbnail" src="tiny-assets/room-6.jpg" onclick="goToImage(5)">
+                                <img class="thumbnail" src="./tiny-assets/IMG_0892_Original.jpeg" onclick="goToImage(1)">
+                                <img class="thumbnail" src="./tiny-assets/IMG_0895_Original.jpeg" onclick="goToImage(2)">
+                                <img class="thumbnail" src="./tiny-assets/IMG_0897_Original.jpeg" onclick="goToImage(3)">
+                                <img class="thumbnail" src="./tiny-assets/IMG_7961_Original.jpeg" onclick="goToImage(4)">
+                                <img class="thumbnail" src="./tiny-assets/IMG_0923_Original.jpeg" onclick="goToImage(5)">
                             </div>
                         </div>
                     </div>
@@ -434,6 +434,76 @@
                     </div>
                 </div>
             </div>
+            <div class="room__card">
+                <div class="room__card__image">
+                    <img class="roomImage fade-in" src="tiny-assets/room-1.jpg" alt="Room Image" />
+                </div>
+                <div class="room__card__details">
+                    <h4>Suit Room</h4>
+                    <p>Comfortable beds, air conditioning, and a private balcony for your comfort.</p>
+                    <h5>Starting from <span>$210/night</span></h5>
+                    <div class="btn-container">
+                        <a href="https://wa.me/96181160601" target="_blank">
+                            <button class="btn">Book Now</button>
+                        </a>
+                        <button class="btn info-btn" onclick="openPopup('suit-room-2')">Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Popup Container -->
+            <div class="popup-container" id="suit-room-2">
+                <div class="popup">
+                    <button class="close-popup" onclick="closePopup('suit-room-2')">✖</button>
+                    <div class="popup-header">
+                        <h4>Suit Room</h4>
+                        <span>Room area: 16 m²</span>
+                    </div>
+                    <div class="popup-content">
+                        <!-- Left Column (Text) -->
+                        <div class="popup-left">
+                            <p>
+                                The Suit Room features a queen bed, double sofa bed, and single sofa bed. It has a separate living area, private bathroom, and a fully equipped kitchen. Enjoy a Middle Eastern breakfast for $10 per person.
+                            </p>
+                            <h5>Available in your private bathroom:</h5>
+                            <ul>
+                                <li><span>🚿</span> Shower</li>
+                                <li><span>🧼</span> Free toiletries</li>
+                                <li><span>🛁</span> Towels</li>
+                                <li><span>🚽</span> Toilet paper</li>
+                            </ul>
+                            <h5>Facilities:</h5>
+                            <ul>
+                                <li><span>❄️</span> Air conditioning</li>
+                                <li><span>📺</span> Flat-screen TV</li>
+                                <li><span>📶</span> Free Wi-Fi</li>
+                                <li><span>🔊</span> Soundproof</li>
+                                <li><span>📡</span> Satellite channels</li>
+                                <li><span>☕</span> Coffee maker</li>
+                            </ul>
+                        </div>
+                        <!-- Right Column (Image Slider with Arrows and Bullets) -->
+                        <div class="popup-right">
+                            <!-- Larger Main Image with Arrows -->
+                            <div class="main-image-container">
+                                <button class="arrow left-arrow" onclick="prevImage()">&#8249;</button>
+                                <img id="main-image" src="tiny-assets/room-1.jpg" alt="Room Image" />
+                                <button class="arrow right-arrow" onclick="nextImage()">&#8250;</button>
+                            </div>
+
+                            <!-- Thumbnail Images -->
+                            <div class="thumbnails-container">
+                                <img class="thumbnail active" src="tiny-assets/room-1.jpg" onclick="goToImage(0)">
+                                <img class="thumbnail" src="tiny-assets/room-2.jpg" onclick="goToImage(1)">
+                                <img class="thumbnail" src="tiny-assets/room-3.jpg" onclick="goToImage(2)">
+                                <img class="thumbnail" src="tiny-assets/room-4.jpg" onclick="goToImage(3)">
+                                <img class="thumbnail" src="tiny-assets/room-5.jpg" onclick="goToImage(4)">
+                                <img class="thumbnail" src="tiny-assets/room-6.jpg" onclick="goToImage(5)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="event-section" id="event">
@@ -557,7 +627,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="gallery">
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <div class="numbertext">1 / 4</div>
