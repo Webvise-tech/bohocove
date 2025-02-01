@@ -160,6 +160,7 @@ function contact(event) {
 
 
 
+/*
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".room__card").forEach((card) => {
         const images = [
@@ -194,29 +195,146 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
 
+        /*
         function stopImageRotation() {
             if (intervalId) {
                 clearInterval(intervalId);
                 intervalId = null;
             }
-        }
+        
 
-        card.addEventListener("mouseenter", startImageRotation);
-        card.addEventListener("mouseleave", stopImageRotation);
+card.addEventListener("mouseenter", startImageRotation);
+card.addEventListener("mouseleave", stopImageRotation);
 
-        bullets.forEach((bullet) => {
-            bullet.addEventListener("click", (e) => {
-                currentIndex = parseInt(e.target.dataset.index, 10);
-                updateImage(currentIndex);
-            });
-        });
-
+bullets.forEach((bullet) => {
+    bullet.addEventListener("click", (e) => {
+        currentIndex = parseInt(e.target.dataset.index, 10);
         updateImage(currentIndex);
     });
 });
 
+updateImage(currentIndex);
+});
+});
+}*/
 
 function scrollToEvent(event) {
     event.preventDefault(); // Prevent page refresh
     document.getElementById('event').scrollIntoView({ behavior: 'smooth' });
 }
+//container pop up
+function openPopup(id) {
+    const popup = document.getElementById(id);
+    if (!popup) {
+        console.error("Popup not found:", id);
+        return;
+    }
+
+    popup.style.display = "flex"; // Open the correct popup
+
+    // Initialize slider only for the opened popup
+    setTimeout(() => initializeSlider(id), 100);
+}
+
+function closePopup(id) {
+    const popup = document.getElementById(id);
+    if (popup) popup.style.display = "none";
+}
+
+function initializeSlider(popupId) {
+    const popup = document.getElementById(popupId);
+    if (!popup) return;
+
+    const mainImage = popup.querySelector(".main-image-container img");
+    const thumbnails = popup.querySelectorAll(".thumbnail");
+    const prevButton = popup.querySelector(".left-arrow");
+    const nextButton = popup.querySelector(".right-arrow");
+
+    if (!mainImage || thumbnails.length === 0) {
+        console.error("Slider elements not found in:", popupId);
+        return;
+    }
+
+    let currentImageIndex = 0;
+    const images = [
+        "tiny-assets/IMG_0890_Original.webp",
+        "tiny-assets/IMG_0890_Original.webp",
+        "tiny-assets/IMG_0892_Original.jpeg",
+        "tiny-assets/IMG_0895_Original.jpeg",
+        "tiny-assets/IMG_0897_Original.jpeg",
+        "tiny-assets/room-6.jpg"
+    ];
+
+    function updateActiveElements() {
+        mainImage.src = images[currentImageIndex];
+
+        thumbnails.forEach((thumbnail, index) => {
+            thumbnail.classList.toggle("active", index === currentImageIndex);
+        });
+    }
+
+    function nextImage() {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        updateActiveElements();
+    }
+
+    function prevImage() {
+        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+        updateActiveElements();
+    }
+
+    function goToImage(index) {
+        currentImageIndex = index;
+        updateActiveElements();
+    }
+
+    thumbnails.forEach((thumbnail, index) => {
+        thumbnail.addEventListener("click", () => goToImage(index));
+    });
+
+    if (prevButton) prevButton.addEventListener("click", prevImage);
+    if (nextButton) nextButton.addEventListener("click", nextImage);
+
+    updateActiveElements();
+}
+//gallery slider
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+// Auto Slide   if you need auto slide ,remove the commit "//"
+//var slideIndex = 0;
+//showSlides();
+//function showSlides() {
+//var i;
+//  var slides = document.getElementsByClassName("mySlides");
+// for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+// }
+//  slideIndex++;
+// if (slideIndex > slides.length) { slideIndex = 1 }
+// slides[slideIndex - 1].style.display = "block";
+// setTimeout(showSlides, 2000); // Change image every 2 seconds
+//}

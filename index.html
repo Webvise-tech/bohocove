@@ -163,46 +163,144 @@
                 <div class="room__card__image">
                     <img class="roomImage fade-in" src="tiny-assets/room-1.jpg" alt="Room Image" />
                 </div>
-                <div class="room__card__bullets">
-                    <span class="bullet active" data-index="0"></span>
-                    <span class="bullet" data-index="1"></span>
-                    <span class="bullet" data-index="2"></span>
+                <div class="room__card__details">
+                    <h4>CLASSIC SINGLE ROOM</h4>
+                    <p>Relax in a cozy room with a queen bed and a single sofa bed, perfect for a comfortable stay by the sea.</p>
+                    <h5>Starting from <span>$110/night</span></h5>
+                    <div class="btn-container">
+                        <a href="https://wa.me/96181160601" target="_blank"><button class="btn">Book Now</button></a>
+                        <button class="btn info-btn" onclick="openPopup('double-room')">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-container" id="double-room">
+                <div class="popup">
+                    <button class="close-popup" onclick="closePopup('double-room')">✖</button>
+                    <div class="popup-header">
+                        <h4>CLASSIC SINGLE ROOM</h4>
+                        <span>Room area: 16 m²</span>
+                    </div>
+                    <div class="popup-content">
+                        <!-- Left Column (Text) -->
+                        <div class="popup-left">
+                            <p>
+                                Experience a serene getaway in this beautiful sea-view room, designed for up to 3 guests. Enjoy the comfort of a queen bed and a single sofa bed, along with a fully equipped kitchen, a private bathroom, and a spacious balcony overlooking the ocean. Ideal
+                                for a relaxing and unforgettable stay.
+                            </p>
+                            <h5>Available in your private bathroom:</h5>
+                            <ul>
+                                <li><span>🚿</span> Shower</li>
+                                <li><span>🧼</span> Free toiletries</li>
+                                <li><span>🛁</span> Towels</li>
+                                <li><span>🚽</span> Toilet paper</li>
+                            </ul>
+                            <h5>Facilities:</h5>
+                            <ul>
+                                <li><span>❄️</span> Air conditioning</li>
+                                <li><span>📺</span> Flat-screen TV</li>
+                                <li><span>📶</span> Free Wi-Fi</li>
+                                <li><span>🔊</span> Soundproof</li>
+                                <li><span>📡</span> Satellite channels</li>
+                                <li><span>☕</span> Coffee maker</li>
+                            </ul>
+                            <h5>Additional Services (Extra Charge):</h5>
+                            <ul>
+                                <li>🍽️ Breakfast per person ($10)</li>
+                                <li>🧺 Laundry Service</li>
+                                <li>📶 High-Speed Wi-Fi Upgrade</li>
+                            </ul>
+                        </div>
+                        <!-- Right Column (Image Slider with Arrows and Bullets) -->
+                        <div class="popup-right">
+                            <!-- Larger Main Image with Arrows -->
+                            <div class="main-image-container">
+                                <button class="arrow left-arrow" onclick="prevImage()">&#8249;</button>
+                                <img id="main-image" src="./tiny-assets/IMG_0891_Original.jpeg" alt="Room Image" />
+                                <button class="arrow right-arrow" onclick="nextImage()">&#8250;</button>
+                            </div>
+
+                            <!-- Thumbnail Images -->
+                            <div class="thumbnails-container">
+                                <img class="thumbnail active" src="./tiny-assets/IMG_0890_Original.webp" onclick="goToImage(0)">
+                                <img class="thumbnail" src="./tiny-assets/IMG_0890_Original.webp" onclick="goToImage(1)">
+                                <img class="thumbnail" src="./tiny-assets/IMG_0892_Original.jpeg" onclick="goToImage(2)">
+                                <img class="thumbnail" src="./tiny-assets/IMG_0895_Original.jpeg" onclick="goToImage(3)">
+                                <img class="thumbnail" src="./tiny-assets/IMG_0897_Original.jpeg" onclick="goToImage(4)">
+                                <img class="thumbnail" src="tiny-assets/room-6.jpg" onclick="goToImage(5)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="room__card fix__bug">
+                <div class="room__card__image">
+                    <img class="roomImage fade-in" src="tiny-assets/room-1.jpg" alt="Room Image" />
                 </div>
                 <div class="room__card__details">
-                    <h4>Double</h4>
+                    <h4>Double-test</h4>
                     <p>This room contains a comfortable queen bed and a sofa bed, making it perfect for up to 3 people. Breakfast is available for an additional $10 per person.</p>
                     <h5>Starting from <span>$150/night</span></h5>
                     <div class="btn-container">
                         <a href="https://wa.me/96181160601" target="_blank"><button class="btn">Book Now</button></a>
+                        <button class="btn info-btn" onclick="openPopup('double-room-2')">Details</button>
                     </div>
                 </div>
             </div>
-            <div class="room__card" data-images='["tiny-assets/room-1.jpg", "tiny-assets/room-2.jpg", "tiny-assets/room-3.jpg"]'>
-                <div class="room__card__image">
-                    <img class="roomImage fade-in" src="tiny-assets/room-1.jpg" alt="Room Image" />
-                </div>
-                <div class="room__card__bullets">
-                    <span class="bullet active" data-index="0"></span>
-                    <span class="bullet" data-index="1"></span>
-                    <span class="bullet" data-index="2"></span>
-                </div>
-                <div class="room__card__details">
-                    <h4>Double Deluxe</h4>
-                    <p>This room features a queen bed and a double sofa bed, comfortably accommodating up to 4 people. Breakfast is available for an additional $10 per person.</p>
-                    <h5>Starting from <span>$150/night</span></h5>
-                    <div class="btn-container">
-                        <a href="https://wa.me/96181160601" target="_blank"><button class="btn">Book Now</button></a>
+            <div class="popup-container" id="double-room-2">
+                <div class="popup">
+                    <button class="close-popup" onclick="closePopup('double-room-2')">✖</button>
+                    <div class="popup-header">
+                        <h4>Double Room-test</h4>
+                        <span>Room area: 16 m²</span>
+                    </div>
+                    <div class="popup-content">
+                        <!-- Left Column (Text) -->
+                        <div class="popup-left">
+                            <p>
+                                The Double Room features a queen bed and a sofa bed, comfortably accommodating up to 3 people. A Middle Eastern breakfast is available for $10 per person.
+                            </p>
+                            <h5>Available in your private bathroom:</h5>
+                            <ul>
+                                <li><span>🚿</span> Shower</li>
+                                <li><span>🧼</span> Free toiletries</li>
+                                <li><span>🛁</span> Towels</li>
+                                <li><span>🚽</span> Toilet paper</li>
+                            </ul>
+                            <h5>Facilities:</h5>
+                            <ul>
+                                <li><span>❄️</span> Air conditioning</li>
+                                <li><span>📺</span> Flat-screen TV</li>
+                                <li><span>📶</span> Free Wi-Fi</li>
+                                <li><span>🔊</span> Soundproof</li>
+                                <li><span>📡</span> Satellite channels</li>
+                                <li><span>☕</span> Coffee maker</li>
+                            </ul>
+                        </div>
+                        <!-- Right Column (Image Slider with Arrows and Bullets) -->
+                        <div class="popup-right">
+                            <!-- Larger Main Image with Arrows -->
+                            <div class="main-image-container">
+                                <button class="arrow left-arrow" onclick="prevImage()">&#8249;</button>
+                                <img id="main-image" src="tiny-assets/room-1.jpg" alt="Room Image" />
+                                <button class="arrow right-arrow" onclick="nextImage()">&#8250;</button>
+                            </div>
+
+                            <!-- Thumbnail Images -->
+                            <div class="thumbnails-container">
+                                <img class="thumbnail active" src="tiny-assets/room-1.jpg" onclick="goToImage(0)">
+                                <img class="thumbnail" src="tiny-assets/room-2.jpg" onclick="goToImage(1)">
+                                <img class="thumbnail" src="tiny-assets/room-3.jpg" onclick="goToImage(2)">
+                                <img class="thumbnail" src="tiny-assets/room-4.jpg" onclick="goToImage(3)">
+                                <img class="thumbnail" src="tiny-assets/room-5.jpg" onclick="goToImage(4)">
+                                <img class="thumbnail" src="tiny-assets/room-6.jpg" onclick="goToImage(5)">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="room__card" data-images='["tiny-assets/room-1.jpg", "tiny-assets/room-2.jpg", "tiny-assets/room-3.jpg"]'>
+            <div class="room__card">
                 <div class="room__card__image">
                     <img class="roomImage fade-in" src="tiny-assets/room-1.jpg" alt="Room Image" />
-                </div>
-                <div class="room__card__bullets">
-                    <span class="bullet active" data-index="0"></span>
-                    <span class="bullet" data-index="1"></span>
-                    <span class="bullet" data-index="2"></span>
                 </div>
                 <div class="room__card__details">
                     <h4>Family</h4>
@@ -210,25 +308,129 @@
                     <h5>Starting from <span>$180/night</span></h5>
                     <div class="btn-container">
                         <a href="https://wa.me/96181160601" target="_blank"><button class="btn">Book Now</button></a>
+                        <button class="btn info-btn" onclick="openPopup('family-room')">Details</button>
                     </div>
                 </div>
             </div>
-            <div class="room__card" data-images='["tiny-assets/room-1.jpg", "tiny-assets/room-2.jpg", "tiny-assets/room-3.jpg"]'>
+            <div class="popup-container" id="family-room">
+                <div class="popup">
+                    <button class="close-popup" onclick="closePopup('family-room')">✖</button>
+                    <div class="popup-header">
+                        <h4>Family Room</h4>
+                        <span>Room area: 16 m²</span>
+                    </div>
+                    <div class="popup-content">
+                        <!-- Left Column (Text) -->
+                        <div class="popup-left">
+                            <p>
+                                The Family Room includes a queen bed, double sofa bed, and single sofa bed in an open space layout. It has a private bathroom and a fully equipped kitchen. A Middle Eastern breakfast is available for $10 per person.
+                            </p>
+                            <h5>Available in your private bathroom:</h5>
+                            <ul>
+                                <li><span>🚿</span> Shower</li>
+                                <li><span>🧼</span> Free toiletries</li>
+                                <li><span>🛁</span> Towels</li>
+                                <li><span>🚽</span> Toilet paper</li>
+                            </ul>
+                            <h5>Facilities:</h5>
+                            <ul>
+                                <li><span>❄️</span> Air conditioning</li>
+                                <li><span>📺</span> Flat-screen TV</li>
+                                <li><span>📶</span> Free Wi-Fi</li>
+                                <li><span>🔊</span> Soundproof</li>
+                                <li><span>📡</span> Satellite channels</li>
+                                <li><span>☕</span> Coffee maker</li>
+                            </ul>
+                        </div>
+                        <!-- Right Column (Image Slider with Arrows and Bullets) -->
+                        <div class="popup-right">
+                            <!-- Larger Main Image with Arrows -->
+                            <div class="main-image-container">
+                                <button class="arrow left-arrow" onclick="prevImage()">&#8249;</button>
+                                <img id="main-image" src="tiny-assets/room-1.jpg" alt="Room Image" />
+                                <button class="arrow right-arrow" onclick="nextImage()">&#8250;</button>
+                            </div>
+
+                            <!-- Thumbnail Images -->
+                            <div class="thumbnails-container">
+                                <img class="thumbnail active" src="tiny-assets/room-1.jpg" onclick="goToImage(0)">
+                                <img class="thumbnail" src="tiny-assets/room-2.jpg" onclick="goToImage(1)">
+                                <img class="thumbnail" src="tiny-assets/room-3.jpg" onclick="goToImage(2)">
+                                <img class="thumbnail" src="tiny-assets/room-4.jpg" onclick="goToImage(3)">
+                                <img class="thumbnail" src="tiny-assets/room-5.jpg" onclick="goToImage(4)">
+                                <img class="thumbnail" src="tiny-assets/room-6.jpg" onclick="goToImage(5)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="room__card">
                 <div class="room__card__image">
                     <img class="roomImage fade-in" src="tiny-assets/room-1.jpg" alt="Room Image" />
                 </div>
-                <div class="room__card__bullets">
-                    <span class="bullet active" data-index="0"></span>
-                    <span class="bullet" data-index="1"></span>
-                    <span class="bullet" data-index="2"></span>
-                </div>
                 <div class="room__card__details">
-                    <h4>Suit</h4>
-                    <p>This room features a queen bed, a double sofa bed, and a single sofa bed, comfortably accommodating up to 5 people. The room includes a fully-equipped kitchen and is separate from the living area for added comfort. Breakfast is available
-                        for an additional $10 per person.</p>
+                    <h4>Suit Room</h4>
+                    <p>Comfortable beds, air conditioning, and a private balcony for your comfort.</p>
                     <h5>Starting from <span>$210/night</span></h5>
                     <div class="btn-container">
-                        <a href="https://wa.me/96181160601" target="_blank"><button class="btn">Book Now</button></a>
+                        <a href="https://wa.me/96181160601" target="_blank">
+                            <button class="btn">Book Now</button>
+                        </a>
+                        <button class="btn info-btn" onclick="openPopup('suit-room')">Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Popup Container -->
+            <div class="popup-container" id="suit-room">
+                <div class="popup">
+                    <button class="close-popup" onclick="closePopup('suit-room')">✖</button>
+                    <div class="popup-header">
+                        <h4>Suit Room</h4>
+                        <span>Room area: 16 m²</span>
+                    </div>
+                    <div class="popup-content">
+                        <!-- Left Column (Text) -->
+                        <div class="popup-left">
+                            <p>
+                                The Suit Room features a queen bed, double sofa bed, and single sofa bed. It has a separate living area, private bathroom, and a fully equipped kitchen. Enjoy a Middle Eastern breakfast for $10 per person.
+                            </p>
+                            <h5>Available in your private bathroom:</h5>
+                            <ul>
+                                <li><span>🚿</span> Shower</li>
+                                <li><span>🧼</span> Free toiletries</li>
+                                <li><span>🛁</span> Towels</li>
+                                <li><span>🚽</span> Toilet paper</li>
+                            </ul>
+                            <h5>Facilities:</h5>
+                            <ul>
+                                <li><span>❄️</span> Air conditioning</li>
+                                <li><span>📺</span> Flat-screen TV</li>
+                                <li><span>📶</span> Free Wi-Fi</li>
+                                <li><span>🔊</span> Soundproof</li>
+                                <li><span>📡</span> Satellite channels</li>
+                                <li><span>☕</span> Coffee maker</li>
+                            </ul>
+                        </div>
+                        <!-- Right Column (Image Slider with Arrows and Bullets) -->
+                        <div class="popup-right">
+                            <!-- Larger Main Image with Arrows -->
+                            <div class="main-image-container">
+                                <button class="arrow left-arrow" onclick="prevImage()">&#8249;</button>
+                                <img id="main-image" src="tiny-assets/room-1.jpg" alt="Room Image" />
+                                <button class="arrow right-arrow" onclick="nextImage()">&#8250;</button>
+                            </div>
+
+                            <!-- Thumbnail Images -->
+                            <div class="thumbnails-container">
+                                <img class="thumbnail active" src="tiny-assets/room-1.jpg" onclick="goToImage(0)">
+                                <img class="thumbnail" src="tiny-assets/room-2.jpg" onclick="goToImage(1)">
+                                <img class="thumbnail" src="tiny-assets/room-3.jpg" onclick="goToImage(2)">
+                                <img class="thumbnail" src="tiny-assets/room-4.jpg" onclick="goToImage(3)">
+                                <img class="thumbnail" src="tiny-assets/room-5.jpg" onclick="goToImage(4)">
+                                <img class="thumbnail" src="tiny-assets/room-6.jpg" onclick="goToImage(5)">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -284,7 +486,7 @@
             <div class="form">
                 <div class="contact-info">
                     <h3 class="title">Let's get in touch</h3>
-                    <p class="text">
+                    <p class="contact__text">
                         Have questions or need assistance? We're here to help! Whether you're looking for more information, have specific inquiries, or just want to get in touch, don't hesitate to reach out. Our team is dedicated to providing you with the support you need. Fill
                         out the form below or contact us directly, and we'll get back to you as soon as possible.
                     </p>
@@ -355,7 +557,35 @@
             </div>
         </div>
     </section>
-
+    <section>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img class="gallery__img" src="./tiny-assets/mainSection.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img class="gallery__img" src="./tiny-assets/aboutUs.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img class="gallery__img" src="./tiny-assets/aboutUs2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img class="gallery__img" src="./tiny-assets/aboutUs2.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
     <footer class="footer">
         <div class="section__container footer__container">
             <div class="footer__col">
