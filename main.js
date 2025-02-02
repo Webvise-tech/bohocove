@@ -293,12 +293,12 @@ function initializeSlider(popupId, images) {
 // Initialize sliders for each popup with their respective images
 document.addEventListener("DOMContentLoaded", () => {
     initializeSlider("double-room", [
-        "tiny-assets/IMG_0890_Original.webp",
-        "tiny-assets/IMG_0892_Original.jpeg",
-        "tiny-assets/IMG_0895_Original.jpeg",
-        "tiny-assets/IMG_0897_Original.jpeg",
-        "tiny-assets/IMG_7961_Original.jpeg",
-        "tiny-assets/IMG_0923_Original.jpeg"
+        "tiny-assets/IMG_0891_Original-min.webp",
+        "tiny-assets/IMG_0892_Original-min.webp",
+        "tiny-assets/IMG_0895_Original-min.webp",
+        "tiny-assets/IMG_0897_Original-min.webp",
+        "tiny-assets/IMG_0923_Original-min.webp",
+        "tiny-assets/IMG_7961_Original-min.webp"
     ]);
 
     initializeSlider("double-room-2", [
