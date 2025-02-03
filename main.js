@@ -302,36 +302,36 @@ document.addEventListener("DOMContentLoaded", () => {
     ]);
 
     initializeSlider("double-room-2", [
-        "tiny-assets/room-1.jpg",
-        "tiny-assets/room-2.jpg",
-        "tiny-assets/room-3.jpg",
-        "tiny-assets/room-4.jpg",
-        "tiny-assets/IMG_0897_Original.jpeg",
-        "tiny-assets/room-6.jpg"
+        "tiny-assets/jpeg-optimizer_IMG_0935_Original.webp",
+        "tiny-assets/jpeg-optimizer_IMG_0899_Original.webp",
+        "tiny-assets/jpeg-optimizer_IMG_0936_Original.webp",
+        "tiny-assets/jpeg-optimizer_IMG_0937_Original.webp",
+        "tiny-assets/IMG_0923_Original-min.webp",
+        "tiny-assets/IMG_7961_Original-min.webp"
     ]);
     initializeSlider("family-room", [
-        "tiny-assets/room-1.jpg",
-        "tiny-assets/room-2.jpg",
-        "tiny-assets/room-3.jpg",
-        "tiny-assets/room-4.jpg",
-        "tiny-assets/IMG_0897_Original.jpeg",
+        "tiny-assets/jpeg-optimizer_IMG_0934_Original (1).webp",
+        "tiny-assets/jpeg-optimizer_IMG_0899_Original (2).webp",
+        "tiny-assets/IMG_0897_Original-min.webp",
+        "tiny-assets/IMG_0923_Original-min.webp",
+        "tiny-assets/IMG_7961_Original-min.webp",
         "tiny-assets/room-6.jpg"
     ]);
     initializeSlider("suit-room", [
-        "tiny-assets/room-1.jpg",
-        "tiny-assets/room-2.jpg",
-        "tiny-assets/room-3.jpg",
-        "tiny-assets/room-4.jpg",
-        "tiny-assets/IMG_0897_Original.jpeg",
-        "tiny-assets/room-6.jpg"
+        "tiny-assets/WhatsApp Image 2025-01-21 at 16.24.44_feb8ed77.webp",
+        "tiny-assets/WhatsApp Image 2025-01-21 at 16.24.44_d65d69c8.webp",
+        "tiny-assets/WhatsApp Image 2025-01-21 at 16.24.44_6371c077.webp",
+        "tiny-assets/WhatsApp Image 2025-01-21 at 16.24.44_0d7cf8a1.webp",
+        "tiny-assets/WhatsApp Image 2025-01-21 at 16.24.43_a352a527.webp",
+        "tiny-assets/IMG_7961_Original-min.webp"
     ]);
     initializeSlider("suit-room-2", [
-        "tiny-assets/room-1.jpg",
-        "tiny-assets/room-2.jpg",
-        "tiny-assets/room-3.jpg",
-        "tiny-assets/room-4.jpg",
-        "tiny-assets/IMG_0897_Original.jpeg",
-        "tiny-assets/room-6.jpg"
+        "tiny-assets/jpeg-optimizer_IMG_0912_Original.webp",
+        "tiny-assets/jpeg-optimizer_IMG_0919_Original.webp",
+        "tiny-assets/WhatsApp Image 2025-01-21 at 16.24.43_640a7c18.webp",
+        "tiny-assets/WhatsApp Image 2025-01-21 at 16.23.11_325a12bd.jpg",
+        "tiny-assets/WhatsApp Image 2025-01-21 at 16.23.12_6844a223.jpg",
+        "tiny-assets/IMG_7961_Original-min.webp"
     ]);
 });
 

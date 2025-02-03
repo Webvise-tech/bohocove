@@ -1225,7 +1225,7 @@
     
     .gallery__img {
         vertical-align: middle;
-        height: 500px;
+        height: 650px;
     }
     /* Slideshow container */
     
@@ -1434,6 +1434,9 @@
     }
     
     @media (max-width: 480px) {
+        .gallery__img {
+            height: 400px;
+        }
         .left-arrow {
             left: 10px;
         }
