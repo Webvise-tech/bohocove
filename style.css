@@ -1587,9 +1587,3 @@
         height: auto;
         border-radius: 8px;
     }
-    
-    @media (max-width: 480px) {
-        .gallery2 {
-            display: none;
-        }
-    }
