@@ -377,3 +377,11 @@ function showSlides(n) {
 // setTimeout(showSlides, 2000); // Change image every 2 seconds
 //}
 //test
+function openLightbox(image) {
+    document.getElementById("lightbox-img").src = image.src;
+    document.getElementById("lightbox").style.display = "flex";
+}
+
+function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+}

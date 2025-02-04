@@ -96,15 +96,21 @@
         </div>
     </section>
     <div class="gallery2" id="gallery">
-        <img src="./tiny-assets/jpeg-optimizer_CABD7536-CD6B-49C4-A153-96117B14116F_Original.webp" alt="Image 1">
-        <img src="./tiny-assets/jpeg-optimizer_IMG_0562_Original.webp" alt="Image 2">
-        <img src="./tiny-assets/jpeg-optimizer_IMG_0620_Original.webp" alt="Image 3">
-        <img src="./tiny-assets/jpeg-optimizer_WhatsApp Image 2025-02-03 at 22.20.08_5d640f5d.webp" alt="Image 4">
-        <img src="./tiny-assets/jpeg-optimizer_WhatsApp Image 2025-02-03 at 22.20.08_3518d33a.webp" alt="Image 5">
-        <img src="./tiny-assets/jpeg-optimizer_WhatsApp Image 2025-02-03 at 22.20.08_db7626e1.webp" alt="Image 6">
-        <img src="./tiny-assets/jpeg-optimizer_WhatsApp Image 2025-02-03 at 22.20.09_176a5860.webp" alt="Image 7">
-        <img src="./tiny-assets/jpeg-optimizer_IMG_0553_Original.jpeg" alt="Image 8">
+        <img src="./tiny-assets/jpeg-optimizer_CABD7536-CD6B-49C4-A153-96117B14116F_Original.webp" alt="Image 1" onclick="openLightbox(this)">
+        <img src="./tiny-assets/jpeg-optimizer_IMG_0562_Original.webp" alt="Image 2" onclick="openLightbox(this)">
+        <img src="./tiny-assets/jpeg-optimizer_IMG_0620_Original.webp" alt="Image 3" onclick="openLightbox(this)">
+        <img src="./tiny-assets/jpeg-optimizer_WhatsApp Image 2025-02-03 at 22.20.08_5d640f5d.webp" alt="Image 4" onclick="openLightbox(this)">
+        <img src="./tiny-assets/jpeg-optimizer_WhatsApp Image 2025-02-03 at 22.20.08_3518d33a.webp" alt="Image 5" onclick="openLightbox(this)">
+        <img src="./tiny-assets/jpeg-optimizer_WhatsApp Image 2025-02-03 at 22.20.08_db7626e1.webp" alt="Image 6" onclick="openLightbox(this)">
+        <img src="./tiny-assets/jpeg-optimizer_WhatsApp Image 2025-02-03 at 22.20.09_176a5860.webp" alt="Image 7" onclick="openLightbox(this)">
+        <img src="./tiny-assets/jpeg-optimizer_IMG_0553_Original.jpeg" alt="Image 8" onclick="openLightbox(this)">
     </div>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
 
 
 
