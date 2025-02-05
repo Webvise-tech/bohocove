@@ -141,6 +141,8 @@ inputs.forEach((input) => {
 //template_unbiz6i
 //service_0b9rolc
 //public key IWxTW5DhPlhKeEsk
+
+
 function contact(event) {
     event.preventDefault();
     emailjs.sendForm(
@@ -149,14 +151,16 @@ function contact(event) {
         event.target, // The form element
         'IWxTW5DhPlhKeEskS' // User ID or Public Key
     ).then(() => {
-        // Show success message with smooth fade-in
         const successMessage = document.getElementById('success-message');
         successMessage.classList.add('show');
+        document.getElementById("form").reset();
         console.log("Email sent successfully!");
     }).catch((error) => {
         console.error("Failed to send email:", error);
     });
 }
+
+
 
 
 

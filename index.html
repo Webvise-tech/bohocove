@@ -616,35 +616,35 @@
                     </div>
                 </div>
 
-                <div class="contact-form ">
-                    <span class="circle one "></span>
-                    <span class="circle two "></span>
+                <div class="contact-form">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
 
-                    <form action="index.html " autocomplete="off " onsubmit="contact(event) ">
-                        <h3 class="title ">Contact us</h3>
-                        <div class="input-container ">
-                            <input type="text " name="from_name " class="input " required/>
-                            <label for=" ">Username</label>
+                    <form action="index.html" autocomplete="off" onsubmit="contact(event)" id="form">
+                        <h3 class="title">Contact us</h3>
+                        <div class="input-container">
+                            <input type="text" name="from_name" class="input" required/>
+                            <label for="">Username</label>
                             <span>Username</span>
                         </div>
-                        <div class="input-container ">
-                            <input type="email " name="user_email " class="input " required/>
-                            <label for=" ">Email</label>
+                        <div class="input-container">
+                            <input type="email" name="user_email" class="input" required/>
+                            <label for="">Email</label>
                             <span>Email</span>
                         </div>
-                        <div class="input-container ">
-                            <input type="tel " name="from_phone " class="input " required/>
-                            <label for=" ">Phone</label>
+                        <div class="input-container">
+                            <input type="tel" name="from_phone" class="input" required/>
+                            <label for="">Phone</label>
                             <span>Phone</span>
                         </div>
-                        <div class="input-container textarea ">
-                            <textarea name="message " class="input " required></textarea>
-                            <label for=" ">Message</label>
+                        <div class="input-container textarea">
+                            <textarea name="message" class="input" required></textarea>
+                            <label for="">Message</label>
                             <span>Message</span>
                         </div>
-                        <input type="submit " value="Send " class="btn__contact " />
+                        <button type="submit" value="Send" class="btn__contact" onclick="clearContactForm()">Send</button>
+                        <p id="success-message" class="success-message">Message sent successfully!</p>
                     </form>
-
                 </div>
             </div>
         </div>
