@@ -895,6 +895,11 @@
         display: block;
         opacity: 1;
     }
+    
+    .location__rapper {
+        display: flex;
+        color: var(--text-light);
+    }
     /*contact*/
     /*footer*/
     
