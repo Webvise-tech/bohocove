@@ -330,9 +330,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "tiny-assets/IMG_7961_Original-min.webp"
     ]);
     initializeSlider("suit-room-2", [
-        "tiny-assets/jpeg-optimizer_IMG_0912_Original.webp",
-        "tiny-assets/jpeg-optimizer_IMG_0919_Original.webp",
-        "tiny-assets/WhatsApp Image 2025-01-21 at 16.24.43_640a7c18.webp",
+        "tiny-assets/new__room1.webp",
+        "tiny-assets/new__room2.webp",
         "tiny-assets/WhatsApp Image 2025-01-21 at 16.23.11_325a12bd.jpg",
         "tiny-assets/WhatsApp Image 2025-01-21 at 16.23.12_6844a223.jpg",
         "tiny-assets/IMG_7961_Original-min.webp"
